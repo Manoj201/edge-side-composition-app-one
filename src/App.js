@@ -7,7 +7,7 @@ function App() {
   const handleClick = () => {
     const cookies = new Cookies();
     cookies.set('version', 'newApp', { path: '/' });
-    // window.location.reload();
+    window.location.reload();
   }
   
   return (
