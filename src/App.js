@@ -12,7 +12,7 @@ function App() {
   
   return (
     <div className="App">
-      <h2>Version - {process.env.REACT_APP_VERSION}</h2>
+      <h2>Version - {process.env.REACT_APP_VERSION} Updated</h2>
       <button onClick={handleClick}>
         Navigate to Second App
       </button>
