@@ -1,11 +1,14 @@
 import React from "react";
 import Cookies from "universal-cookie";
+import { useHistory } from "react-router-dom";
 
 const HomePage = () => {
+	let history = useHistory();
 	const handleClick = () => {
 		const cookies = new Cookies();
 		cookies.set("version", "payment", { path: "/" });
-		window.location.href = "/payment";
+		history.push("/payment");
+		// window.location.href = "/payment";
 		// window.location.reload();
 	};
 	return (
