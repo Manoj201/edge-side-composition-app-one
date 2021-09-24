@@ -6,7 +6,7 @@ const HomePage = () => {
 		const cookies = new Cookies();
 		cookies.set("version", "payment", { path: "/" });
 		// window.location.href = "/payment";
-		// window.location.reload();
+		window.location.reload();
 	};
 	return (
 		<div>
