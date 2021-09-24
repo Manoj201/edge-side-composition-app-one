@@ -9,7 +9,7 @@ const HomePage = () => {
 		cookies.set("version", "payment", { path: "/" });
 		history.push("/payment");
 		// window.location.href = "/payment";
-		// window.location.reload();
+		window.location.reload();
 	};
 	return (
 		<div>
