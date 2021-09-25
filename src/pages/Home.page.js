@@ -8,8 +8,8 @@ const HomePage = () => {
 		const cookies = new Cookies();
 		cookies.set("version", "payment", { path: "/" });
 		// history.push("/payment");
-		// window.location.href = "/payment";
-		window.history.pushState({}, "", "/payment");
+		window.location.href = "/payment";
+		// window.history.pushState({}, "", "/payment");
 		// window.location.reload();
 	};
 	return (
