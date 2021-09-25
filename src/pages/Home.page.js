@@ -7,9 +7,10 @@ const HomePage = () => {
 	const handleClick = () => {
 		const cookies = new Cookies();
 		cookies.set("version", "payment", { path: "/" });
-		history.push("/payment");
+		// history.push("/payment");
 		// window.location.href = "/payment";
-		window.location.reload();
+		window.history.pushState({}, "", "/payment");
+		// window.location.reload();
 	};
 	return (
 		<div>
